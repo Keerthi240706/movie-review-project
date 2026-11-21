@@ -1,4 +1,5 @@
 
+
 from django.contrib import admin
 from .models import Movie, Review
 
@@ -13,7 +14,6 @@ class MovieAdmin(admin.ModelAdmin):
 class ReviewAdmin(admin.ModelAdmin):
     list_display = ('movie', 'user', 'created_at')
     list_filter = ('rating',)
-    
 
 
 # Register your models here.
